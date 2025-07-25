@@ -1,0 +1,57 @@
+<body>
+    <div class="coffee-machine">
+        <div class="header">
+            <h1>☕ CoffeeMatic Pro</h1>
+            <p>Máquina Dispensadora de Café Premium</p>
+            <link rel="stylesheet" href="style.css">
+        </div>
+
+        <div class="status-panel">
+            <div class="status-item">
+                <span>☕ Café:</span>
+                <div class="status-value high" id="coffeeStatus">100 Oz</div>
+            </div>
+            <div class="status-item">
+                <span>🥤 Vasos:</span>
+                <div class="status-value high" id="cupsStatus">50 unid</div>
+            </div>
+            <div class="status-item">
+                <span>🍯 Azúcar:</span>
+                <div class="status-value high" id="sugarStatus">200 cdas</div>
+            </div>
+        </div>
+
+        <div class="selection-section">
+            <div class="section-title">Selecciona el tamaño del vaso</div>
+            <div class="cup-sizes">
+                <div class="cup-option" data-size="small" data-oz="3">
+                    <div class="cup-size">Pequeño</div>
+                    <div class="cup-volume">3 Oz</div>
+                </div>
+                <div class="cup-option" data-size="medium" data-oz="5">
+                    <div class="cup-size">Mediano</div>
+                    <div class="cup-volume">5 Oz</div>
+                </div>
+                <div class="cup-option" data-size="large" data-oz="7">
+                    <div class="cup-size">Grande</div>
+                    <div class="cup-volume">7 Oz</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="selection-section sugar-section">
+            <div class="section-title">Cucharadas de azúcar</div>
+            <div class="sugar-controls">
+                <button class="sugar-btn" id="decreaseSugar">-</button>
+                <div class="sugar-display" id="sugarDisplay">0</div>
+                <button class="sugar-btn" id="increaseSugar">+</button>
+            </div>
+        </div>
+
+        <button class="dispense-btn" id="dispenseBtn">
+            🚀 Dispensar Café
+        </button>
+
+        <div class="message" id="messageArea" style="display: none;"></div>
+        <script src="script.js"></script>
+    </div>
